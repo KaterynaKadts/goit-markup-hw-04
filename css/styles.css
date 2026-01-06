@@ -305,6 +305,9 @@ margin-bottom: 8px;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .team-image {
@@ -416,12 +419,12 @@ margin-bottom: 8px;
     display: block;
 }
 
-.portfolio-wrap {
+.portfolio-cover-wrap {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.portfolio-cover-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -442,8 +445,14 @@ margin-bottom: 8px;
     margin: 0;
 }
 
-.portfolio-item:hover .overlay {
-    transform: translateY(0);
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+    transform: translateY(0%);
 }
 
 .portfolio-box {
